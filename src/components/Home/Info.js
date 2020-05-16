@@ -6,32 +6,21 @@ export default function info() {
   return (
     <section className="py-5">
       <div className="container">
-        <Title title="our story" />
+        <Title title="Our story" />
         <div className="row">
-          <div className="col-10 col-sm-8 mx-auto text-center">
-            <p className="lead text-muted mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Provident quas neque obcaecati, ut, natus sed sit repellendus,
-              inventore doloremque dolore error quis reiciendis at similique
-              tempora. Rerum enim distinctio repellat? Possimus quaerat
-              necessitatibus ab facilis ut in. Voluptas repellat voluptatum
-              provident eius dolores ea blanditiis! Totam impedit facere minima
-              minus pariatur in harum, placeat repudiandae velit non ducimus nam
-              perferendis sequi laboriosam maxime est dolore? Quos autem
-              inventore quod dolores reiciendis fugit voluptatem, commodi
-              ratione ea. Nihil quasi rem quos!
-            </p>
-            <Link to="/about">
-              <button className="btn text-uppercase btn-yellow">
-                about page
-              </button>
-            </Link>
-            <Link to="/contact">
-              <button className="btn text-uppercase btn-yellow">
-                about page
-              </button>
-            </Link>
-          </div>
+          <p className="lead text-muted mb-5">
+            Yemit was found by Bezawit T Sima (PhD), Global Health and Community
+            Medicine expert. She was born and raised in rural Ethiopa. She has
+            over 10 years of experience in Ethiopian healthcare system including
+            organizing community healthcare services in the rural setting such
+            as maternal and child care, immunization program, and disease
+            prevention. In addition, she worked as a lecturer at Jimma Univerity
+            where community based training program is the philosophical approach
+            to achieve educational relevance to community felt needs. Her
+            extensive understanding of the rural setting in Ethiopia, her
+            expertise and experience in primary healthcare and research makes
+            her a local solution for the local problem.
+          </p>
         </div>
       </div>
     </section>

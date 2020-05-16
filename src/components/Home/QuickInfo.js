@@ -9,22 +9,23 @@ export default class QuickInfo extends Component {
   render() {
     return (
       <Section>
-        <Title message="let us tell you" title="our mission" />
-        <QuickInfoWrapper>
-          <p className="text">
-            Ut magna tempor culpa aliqua adipisicing eu nisi non veniam
-            consequat culpa id dolore. Sunt consequat voluptate duis veniam id
-            fugiat. Reprehenderit ipsum sint amet incididunt aliqua ut
-            incididunt qui eu velit ullamco labore officia in. Consequat
-            pariatur id fugiat anim dolore aliqua amet laborum proident nisi
-            amet id ut. Commodo quis eu labore irure veniam ea consectetur id
-            sint excepteur commodo ea non. Laborum elit et nostrud id
-            adipisicing. Magna incididunt pariatur laborum cillum dolor.
-          </p>
-          <Link to="/about/" style={{ textDecoration: "none" }}>
-            <SectionButton style={{ margin: "2rem auto" }}>about</SectionButton>
-          </Link>
-        </QuickInfoWrapper>
+        <div className="container">
+          <Title title="our mission" />
+
+          <QuickInfoWrapper>
+            <p className="text">
+              Ethiopia has been mainly approaching the healthcare system
+              challenge through aids and experts support from charity
+              organizations coming from Western countries. However, the
+              sustainability of such interventions was perished once the project
+              phased out. Sustainable and local solutions are ideal to address
+              the health and health related challenges in marginalized and
+              disadvantaged communities in the country. Empowering women with
+              leadership and economic impact could be achieved through
+              mobilizing the community and available resources.
+            </p>
+          </QuickInfoWrapper>
+        </div>
       </Section>
     )
   }
@@ -33,7 +34,7 @@ const QuickInfoWrapper = styled.div`
   width: 90vw;
   margin: 2rem auto;
   line-height: 2rem;
-  color: ${styles.colors.mainGrey};
+  color: ${styles.colors.mainBlack};
   word-spacing: 0.2rem;
   @media (min-width: 768px) {
     width: 70vw;

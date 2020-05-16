@@ -29,7 +29,7 @@ export default class navbar extends Component {
 //style the navbar with media query
 const NavWrapper = styled.nav`
   @media (min-width: 768px) {
-    display: flex;
+    display: inline-flexbox;
     align-items: center;
   }
 `

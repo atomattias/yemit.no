@@ -15,12 +15,12 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
-    <HomeHeader img={img}>
-      <Banner title="Yemit" subtitle="Empowering women for better world">
-        <Link to="/menu/" style={{ textDecoration: "none" }}>
-          <BannerButton style={{ margin: "2rem auto" }}>menu</BannerButton>
-        </Link>
-      </Banner>
+    <HomeHeader>
+      <Banner
+        img={img}
+        title="Yemit Care"
+        subtitle="Empowering women for better world"
+      ></Banner>
     </HomeHeader>
     <QuickInfo />
     <Info />

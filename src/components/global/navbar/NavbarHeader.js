@@ -14,12 +14,6 @@ export default class NavbarHeader extends Component {
         <Link to="/">
           <img src={logo} alt="Yemit Ethiopia" />
         </Link>
-        <FaAlignRight
-          className="toggle-icon"
-          onClick={() => {
-            handleNavbar()
-          }}
-        ></FaAlignRight>
       </HeaderWrapper>
     )
   }

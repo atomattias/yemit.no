@@ -50,6 +50,7 @@ const IconWrapper = styled.div`
     cursor: pointer;
     ${styles.transObject({ time: "1s" })};
   }
+  align-items: right;
   .icon:hover {
     color: ${styles.colors.mainYellow};
   }

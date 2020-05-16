@@ -28,7 +28,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="title">Gatsby Cafe</div>
+        <div className="title">yemit Care</div>
         <div className="footerLinks">
           <FooterLinks />
         </div>
