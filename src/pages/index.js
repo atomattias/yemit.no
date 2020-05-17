@@ -11,20 +11,30 @@ import img from "../images/ArdiDrying.jpg"
 import QuickInfo from "../components/Home/QuickInfo"
 import BgImageSlider from "../components/global/BgImageSlider"
 import Carousel from "../components/global/Carousel"
+import { Col, Container, Row } from "react-bootstrap"
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <div>
+      <container>
+        <Row>
+          <Col>
+            <HomeHeader>
+              <Banner
+                img={img}
+                title="Yemit Care"
+                subtitle="Empowering women for better world"
+              ></Banner>
+            </HomeHeader>
+          </Col>
+        </Row>
 
-    <HomeHeader>
-      <Banner
-        img={img}
-        title="Yemit Care"
-        subtitle="Empowering women for better world"
-      ></Banner>
-    </HomeHeader>
-    <QuickInfo />
-    <Info />
-    <Contact />
+        <QuickInfo />
+        <Info />
+        <Contact />
+      </container>
+    </div>
   </Layout>
 )
 export const query = graphql`

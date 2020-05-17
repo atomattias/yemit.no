@@ -6,6 +6,8 @@ import { styles } from "../../../utils"
 
 export default class NavbarLinks extends Component {
   state = {
+    navbarOpen: false,
+    css: "collapse navbar-collapse",
     links: [
       {
         id: 0,
@@ -29,6 +31,17 @@ export default class NavbarLinks extends Component {
       },
     ],
   }
+  navbarHandler = () => {
+    this.state.navbarOpen
+      ? this.setState({
+          navbarOpen: false,
+          css: "collapse navbar- collapse",
+        })
+      : this.setState({
+          navbarOpen: true,
+          css: "collapse navbar-collapse show",
+        })
+  }
   render() {
     return (
       <LinkWrapper open={this.props.navbarOpen}>
@@ -36,7 +49,7 @@ export default class NavbarLinks extends Component {
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className="nav-link">
+              <Link to={item.path} className="nav-link text-capitalize">
                 {" "}
                 {item.name}{" "}
               </Link>

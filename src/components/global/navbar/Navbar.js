@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import NavbarHeader from "./NavbarHeader"
 import NavbarLinks from "./NavbarLinks"
+import Header from "../Header"
+
 import NavbarIcons from "./NavbarIcons"
 import styled from "styled-components"
 
@@ -18,7 +20,7 @@ export default class navbar extends Component {
   render() {
     return (
       <NavWrapper>
-        <NavbarHeader handleNavbar={this.handleNavbar} />
+        <NavbarHeader navbarOpen={this.state.navbarOpen} />
         <NavbarLinks navbarOpen={this.state.navbarOpen} />
         <NavbarIcons />
       </NavWrapper>

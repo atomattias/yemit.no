@@ -1,33 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { createGlobalStyle } from "styled-components"
+import Container from "react-bootstrap/Container"
+import { MDXProvider } from "@mdx-js/react"
 
-import Navbar from "./global/navbar/Navbar"
-import Footer from "./global/footer/Footer"
+import Footer from "./global/Footer"
+import Header from "./global/Header"
+
+import classes from "./Layout.module.css"
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
-      <MyGlobalStyle />
-      <Navbar />
-      {children}
-      <Footer />
-    </React.Fragment>
+    <MDXProvider
+      components={{
+        // eslint-disable-next-line jsx-a11y/anchor-has-content
+        a: props => <a {...props} className={classes.mdxAnchor} />,
+      }}
+    >
+      <Container fluid className={classes.baseGrid}>
+        <Header />
+        <div className={classes.container}>
+          <main>{children}</main>
+        </div>
+        <Footer />
+      </Container>
+    </MDXProvider>
   )
 }
-
-const MyGlobalStyle = createGlobalStyle`
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	font-family: Georgia, 'Times New Roman', Times, serif ;
-	color: black;
-	background: white;
-}
-`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

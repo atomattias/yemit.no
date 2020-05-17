@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+}
+
+.baseGrid {
+  margin: 0;
+  padding: 0;
+}
+
+a.mdxAnchor {
+  color: var(--dark-green);
+}
