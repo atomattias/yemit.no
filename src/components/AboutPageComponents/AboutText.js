@@ -28,29 +28,26 @@ export default class AboutText extends Component {
                 delivery and post-delivery including quality care for newborn
                 babies after birth.
               </Row>
-              <div className="container">
-                <Row>
-                  {" "}
-                  <p>
-                    <span className="subheader">Our strategies </span>
-                  </p>
-                </Row>
+              <Row>
                 <p>
-                  <span className="subheader">Community involvement:- </span> we
-                  work in close collaboration with the community for successful
-                  social and community mobilization for change and
-                  sustainability.
+                  <span className="subheader">Our strategies </span>
                 </p>
+              </Row>
+              <Row>
+                Community involvement:- we work in close collaboration with the
+                community for successful social and community mobilization for
+                change and sustainability.
+              </Row>
+              <Row>
+                Partnership:- we will work with governmental and no governmental
+                organizations to ensure integrated and sustainable
+                interventions.
+              </Row>
+              <Row>
                 <p>
-                  <span className="subheader">Partnership:- </span> we will work
-                  with governmental and no governmental organizations to ensure
-                  integrated and sustainable interventions.
+                  <span className="subheader">Our activities </span>
                 </p>
-              </div>
-
-              <p>
-                <span className="subheader">Our activities </span>
-              </p>
+              </Row>
               <Row>
                 Improving access to healthcare for women in rural and hard to
                 reach settings through developing women and children clinic

@@ -1,5 +1,5 @@
 import React from "react"
-import Title from "../global/Title"
+import { Section, Title, SectionButton } from "../../utils"
 
 export default function Contact() {
   return (
