@@ -11,15 +11,7 @@ export default class AboutText extends Component {
     return (
       <Section>
         <div className="container">
-          <Title title="Empowering women through empowering their health and economy!" />
           <AboutTextWrapper>
-            <div className="container">
-              <h4>
-                <span className="subheader">How we do it? </span>
-              </h4>{" "}
-              Ensuring access to primary healthcare for women and children in
-              most disadvantaged and marginalized community
-            </div>
             <div className="container">
               <Row>
                 <h4>
@@ -36,27 +28,26 @@ export default class AboutText extends Component {
                 delivery and post-delivery including quality care for newborn
                 babies after birth.
               </Row>
-            </div>
-            <div className="container">
-              <h>
-                <p>
+              <div className="container">
+                <Row>
                   {" "}
-                  <span className="subheader">Our strategies </span>
+                  <p>
+                    <span className="subheader">Our strategies </span>
+                  </p>
+                </Row>
+                <p>
+                  <span className="subheader">Community involvement:- </span> we
+                  work in close collaboration with the community for successful
+                  social and community mobilization for change and
+                  sustainability.
                 </p>
-              </h>
-              <Row>
-                <span className="subheader">Community involvement:- </span> we
-                work in close collaboration with the community for successful
-                social and community mobilization for change and sustainability.
-              </Row>
+                <p>
+                  <span className="subheader">Partnership:- </span> we will work
+                  with governmental and no governmental organizations to ensure
+                  integrated and sustainable interventions.
+                </p>
+              </div>
 
-              <Row>
-                <span className="subheader">Partnership:- </span> we will work
-                with governmental and no governmental organizations to ensure
-                integrated and sustainable interventions.
-              </Row>
-            </div>
-            <div className="container">
               <p>
                 <span className="subheader">Our activities </span>
               </p>
