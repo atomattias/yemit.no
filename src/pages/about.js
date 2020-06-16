@@ -13,7 +13,7 @@ const AboutPage = () => (
     <PageHeader img={aboutImg}>
       <Banner
         title=""
-        subtitle="Empowering women through empowering their health and economy!"
+        subtitle="Empowering women through empowering their health!"
       />
     </PageHeader>
     <AboutText />

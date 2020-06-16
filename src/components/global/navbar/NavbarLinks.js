@@ -49,7 +49,10 @@ export default class NavbarLinks extends Component {
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className="nav-link text-capitalize">
+              <Link
+                to={item.path}
+                className="font-bold text-capitalize flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16"
+              >
                 {" "}
                 {item.name}{" "}
               </Link>

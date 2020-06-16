@@ -11,9 +11,16 @@ export default class NavbarHeader extends Component {
     const { handleNavbar } = this.props
     return (
       <HeaderWrapper>
-        <Link to="/">
+        <Link to="/" className="navbar-brand">
           <img src={logo} alt="Yemit Ethiopia" />
         </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={this.navbarHandler}
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
       </HeaderWrapper>
     )
   }

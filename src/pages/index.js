@@ -31,7 +31,6 @@ const IndexPage = ({ data }) => (
         </Row>
 
         <QuickInfo />
-        <Info />
         <Contact />
       </container>
     </div>

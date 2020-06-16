@@ -20,9 +20,13 @@ export default class navbar extends Component {
   render() {
     return (
       <NavWrapper>
-        <NavbarHeader navbarOpen={this.state.navbarOpen} />
-        <NavbarLinks navbarOpen={this.state.navbarOpen} />
-        <NavbarIcons />
+        <nav className="navbar navbar-expand-sm bg-light navbar-light">
+          <NavbarHeader navbarOpen={this.state.navbarOpen} />
+          <div className={this.state.css}>
+            <NavbarLinks navbarOpen={this.state.navbarOpen} />
+          </div>
+          <NavbarIcons />
+        </nav>
       </NavWrapper>
     )
   }
