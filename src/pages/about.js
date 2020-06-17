@@ -2,7 +2,7 @@ import React from "react"
 
 import AboutText from "../components/AboutPageComponents/AboutText"
 import { PageHeader, Banner } from "../utils"
-import aboutImg from "../images/bcg/aboutBcg.jpeg"
+import aboutImg from "../images/bcg/aboutImg.jpg"
 
 import Layout from "../components/layout2"
 import SEO from "../components/seo"
